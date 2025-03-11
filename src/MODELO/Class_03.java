@@ -15,7 +15,7 @@ public class Class_03 {
     public String ms;
 
     
-    public void Area_Rectangulo(int distanciaKm, int Tiempominutos) {
+    public void Distancia_Proyectil(int distanciaKm, int Tiempominutos) {
         ms = "ms";
         double distanciaMetros = distanciaKm * 1000;
         double tiemposegundos = Tiempominutos * 60; 

@@ -4,18 +4,26 @@
  */
 package VISTA;
 
+import MODELO.Class_03;
+
 
 /**
  *
  * @author Propietario
  */
 public class Form_03 extends javax.swing.JFrame {
-    Class3 obj = new Class3();
+    Class_03 obj = new Class_03();
     /**
      * Creates new form Form_03
      */
     public Form_03() {
         initComponents();
+    }
+    public void Distancia_Poryectil(){
+       int distanciaKm = Integer.parseInt(input1.getText());
+       int Tiempominutos = Integer.parseInt(input2.getText());
+       obj.Distancia_Proyectil(distanciaKm, Tiempominutos);
+       resultado.setText(String.valueOf(obj.Velocidad));
     }
 
     /**
@@ -55,6 +63,11 @@ public class Form_03 extends javax.swing.JFrame {
         });
 
         Calcular.setText("Calcular");
+        Calcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CalcularActionPerformed(evt);
+            }
+        });
 
         Limpiar.setText("Limpiar");
         Limpiar.addActionListener(new java.awt.event.ActionListener() {
@@ -132,6 +145,10 @@ public class Form_03 extends javax.swing.JFrame {
         resultado.setText("");
         input1.grabFocus();
     }//GEN-LAST:event_LimpiarActionPerformed
+
+    private void CalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CalcularActionPerformed
+        Distancia_Poryectil();
+    }//GEN-LAST:event_CalcularActionPerformed
 
     /**
      * @param args the command line arguments
