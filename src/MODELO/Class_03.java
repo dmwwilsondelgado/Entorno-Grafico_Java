@@ -12,15 +12,13 @@ package MODELO;
  */
 public class Class_03 {
     public double Velocidad;
-    public String ms;
+   
 
     
-    public void Distancia_Proyectil(int distanciaKm, int Tiempominutos) {
-        ms = "ms";
+    public void Distancia_Proyectil(double distanciaKm, double Tiempominutos) {
         double distanciaMetros = distanciaKm * 1000;
         double tiemposegundos = Tiempominutos * 60; 
         this.Velocidad =  distanciaMetros / tiemposegundos ; // Asigna el resultado a la variable de clase
-        
         
         /** Deep shark 
         // Datos del problema
