@@ -14,4 +14,5 @@ public class Class_0 {
     public void metodoTriangulo( int nu1,int nu2){
         multiplicar = nu1*nu2;
     }
+    
 }

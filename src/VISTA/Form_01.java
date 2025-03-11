@@ -1,4 +1,5 @@
 
+
 package VISTA;
 
 import MODELO.Class_01;
@@ -44,6 +45,12 @@ public class Form_01 extends javax.swing.JFrame {
         jLabel1.setText("INGRESO DE DATOS");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(63, 18, 302, 35);
+
+        Txt_num1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Txt_num1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(Txt_num1);
         Txt_num1.setBounds(170, 70, 89, 22);
 
@@ -95,6 +102,11 @@ public class Form_01 extends javax.swing.JFrame {
 
         Btt_multi.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         Btt_multi.setText("*");
+        Btt_multi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btt_multiActionPerformed(evt);
+            }
+        });
         getContentPane().add(Btt_multi);
         Btt_multi.setBounds(300, 160, 50, 30);
 
@@ -169,6 +181,14 @@ public class Form_01 extends javax.swing.JFrame {
     private void Txt_rtaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_rtaActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Txt_rtaActionPerformed
+
+    private void Txt_num1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Txt_num1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Txt_num1ActionPerformed
+
+    private void Btt_multiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btt_multiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Btt_multiActionPerformed
 
     /**
      * @param args the command line arguments
